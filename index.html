@@ -25,7 +25,10 @@
         <section id="inicio">
             <h1>TeMiPu - Rutas De Transporte</h1>
             <p>¡Descarga nuestra aplicación para encontrar las mejores rutas de transporte público en La Paz, Bolivia!</p>
-            <a href="#" class="download-button">Descargar Ahora</a>
+            <!-- Reemplazado por imagen interactiva -->
+            <button class="download-image" id="downloadNow" aria-label="Descargar TeMiPu">
+                <img src="assets/img/play.png" alt="Descargar TeMiPu en Google Play">
+            </button>
         </section>
         <section id="privacidad">
             <div class="content">
@@ -99,11 +102,13 @@
             <div class="content">
                 <h2>Información de la Aplicación</h2>
                 <p>Detalles sobre la aplicación aquí.</p>
-                <div class="screenshots">
-                    <img src="assets/img/cap4.jpg" alt="Captura 1">
-                    <img src="assets/img/cap3.jpg" alt="Captura 2">
-                    <img src="assets/img/cap2.jpg" alt="Captura 3">
-                    <img src="assets/img/cap1.jpg" alt="Captura 4">
+                <div class="carousel">
+                    <div class="slides">
+                        <div class="slide"><img src="assets/img/cap4.jpg" alt="Captura 1"></div>
+                        <div class="slide"><img src="assets/img/cap3.jpg" alt="Captura 2"></div>
+                        <div class="slide"><img src="assets/img/cap2.jpg" alt="Captura 3"></div>
+                        <div class="slide"><img src="assets/img/cap1.jpg" alt="Captura 4"></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -152,9 +157,20 @@
         <section id="desarrollador">
             <div class="content">
                 <h2>Desarrollador</h2>
-                <p><strong>Fernando Muñoz Aranda</strong><br>Ingeniería en Sistemas Informáticos, Bolivia</p>
-                <p>Apasionado por la tecnología desde temprana edad, Fernando Muñoz Aranda ha forjado un perfil multidisciplinario a través de proyectos personales y colaborativos en diversos ámbitos:</p>
-                <ul>
+                <div class="developer-block">
+                    <img src="assets/img/cv.png" alt="CV - Fernando Muñoz Aranda" class="developer-avatar">
+                    <div class="bio-header">
+                        <h3>Fernando Muñoz Aranda</h3>
+                        <p><strong>Ingeniería en Sistemas Informáticos</strong> · Bolivia</p>
+                        <div class="chips">
+                            <span class="chip">Kovra</span>
+                            <span class="chip">Desarrollo • Mobile • Web</span>
+                            <span class="chip">Español • English</span>
+                        </div>
+                    </div>
+                    <div class="bio-bottom">
+                        <p>Apasionado por la tecnología desde temprana edad, Fernando Muñoz Aranda ha forjado un perfil multidisciplinario a través de proyectos personales y colaborativos en diversos ámbitos:</p>
+                        <ul>
                     <li><strong>Desarrollo de aplicaciones:</strong> Especializado en Flutter y Kotlin. Manejo de bases de datos locales (como SQLite) y en la nube (como Firebase o Supabase).</li>
                     <li><strong>Desarrollo web y móvil:</strong> Creación de aplicaciones dinámicas y responsivas, desde sitios ASPX hasta soluciones móviles para Android.</li>
                     <li><strong>Aplicaciones de escritorio (Windows):</strong> Diseño e implementación de software nativo optimizado para entornos Windows.</li>
@@ -162,7 +178,9 @@
                     <li><strong>Diseño gráfico y modelado 3D:</strong> Concepción de identidades visuales únicas, interfaces atractivas y prototipos tridimensionales que enriquecen la experiencia del usuario.</li>
                     <li><strong>Edición de video:</strong> Producción y posproducción de contenidos audiovisuales con estándares profesionales.</li>
                 </ul>
-                <p>Como demostración de su capacidad de liderazgo y autonomía, Fernando desarrolló Temipu en solitario: una aplicación diseñada para optimizar la movilidad urbana en La Paz. Su enfoque se centra en la usabilidad, el rendimiento y la confianza que los usuarios depositan en cada trayecto.</p>
+                        <p>Como demostración de su capacidad de liderazgo y autonomía, Fernando desarrolló Temipu en solitario: una aplicación diseñada para optimizar la movilidad urbana en La Paz. Su enfoque se centra en la usabilidad, el rendimiento y la confianza que los usuarios depositan en cada trayecto.</p>
+                    </div>
+                </div>
                 <blockquote>
                     <p>“Creé Temipu para ayudar a la ciudad de La Paz a llegar a sus destinos sin perder tiempo y con la confianza que se merece la aplicación. Ese fue nuestro objetivo inicial, y seguimos trabajando para perfeccionarla día a día.”</p>
                 </blockquote>
@@ -173,5 +191,6 @@
     <footer>
         <p>© 2025 TeMiPu - Rutas De Transporte. Todos los derechos reservados.</p>
     </footer>
+        <script src="assets/javascript/main.js"></script>
 </body>
 </html>
